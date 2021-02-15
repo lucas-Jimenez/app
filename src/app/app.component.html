@@ -1,0 +1,22 @@
+
+
+<div>
+  <p>Ingrese url<input type="text" [(ngModel)]="url"></p>
+</div>
+<div>
+  <iframe width="560" height="315" [src]= getEmbedUrl() frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<h3 *ngFor="let i of history">
+  {{i}}
+</h3>
+<button>Add Bookmark</button>
+<button>See Bookmarks</button>
+
+
+
+
+
+
+
+
+
